@@ -1,0 +1,42 @@
+snippet dd
+	dd(${1});
+snippet rv
+	return view('${1}')->with(${2});
+snippet _c
+	public function __construct(${1})
+	{
+		${2:// Keep it simple}
+	}
+snippet met
+	${1:public} function ${2:method}(${3})
+	{
+		${4:// Keep it simple}
+	}
+snippet smet
+	${1:public} static function ${2:method}(${3})
+	{
+		${4:// Keep it simple}
+	}
+snippet phpclass
+	<?php
+
+	namespace ${1:App};
+
+	class ${2:ClassName}${3: extends/implement}
+	{
+		${4}
+	}
+snippet test
+	/** @test */
+	public function it_${1:do_something}()
+	{
+		// Given
+		${2}
+
+		// When
+
+
+		// Then
+
+
+	}
